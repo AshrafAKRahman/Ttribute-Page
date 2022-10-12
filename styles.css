@@ -1,0 +1,411 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Righteous', cursive;
+}  
+/* Navbar*/
+#logo {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+button {
+  padding: 9px;
+  background-color:  rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color:  rgba(0,136,169,0.8)
+}
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: aliceblue;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #161623;
+
+}
+
+/*main section */
+body{
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+#main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#main::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#1c0522, transparent);
+  z-index: 1000;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section img#electricBall {
+  mix-blend-mode: screen;
+}
+section img#NikolaVector {
+  z-index: 1;
+  height: 900px;
+  width: 900px;
+}
+
+#image_caption {
+  position: absolute;
+  right: -350px;
+  color: rgb(140, 224, 235);
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+/* Card Sction*/
+
+
+.sections {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1c0522;
+  padding-bottom: 50px;
+}
+
+.sections::before{
+  content: '';
+  position: absolute;
+  top: 75;
+  left: 30;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(72, 158, 228),rgb(159, 235, 97));
+  clip-path: circle(30% at right 70%);
+}
+
+#card__h1{
+  text-align: center;
+  padding: 55px;
+  font-size: 75px;
+  color: antiquewhite;
+}
+.glass__container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.glass__container .glass__card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+.glass__container .glass__card .glass__content {
+  padding: 20px;
+  text-align: center;
+  opacity: 1.25;
+
+}
+.glass__container .glass__card:hover .glass__content {
+  transform: translateY(0px);
+  opacity: 100;
+
+}
+
+.glass__container .glass__card .glass__content h2 {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.1);
+}
+.glass__container .glass__card .glass__content h3 {
+  font-size: 1.8em;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.glass__container .glass__card .glass__content p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: lighter;
+}
+.glass__container .glass__card .glass__content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*inventions Section*/
+
+.inventions__main{
+  height: 100vh;
+  background: #ffc728;
+  height: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.inventions {
+  width: 100%;
+  display: flex;
+}
+#inventions__h1{
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.inventions__h2{
+  padding-bottom: 30px;
+}
+.inventions__content{
+padding-right: 50px;
+}
+#remoteImg {
+  border-radius: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+/*inventions2*/
+
+.inventions2__main{
+  height: 100vh;
+  background: #13dd67;
+  height: 100%;
+ padding-bottom: 50px;
+}
+
+.inventions2 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+  .inventions2__h2{
+    padding-bottom: 30px;
+  }
+  .inventions2__content{
+    padding-left: 20px;
+  }
+  .inventions2__p {
+padding-right: 30px;
+  }
+#xRayImg {
+  border-radius: 10px;
+ margin: 10px 50px 0px 0px;
+  order: 2;
+}
+
+/*inventions3*/
+.inventions3__main{
+  height: 100vh;
+  background-color: #161623;
+  height: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.inventions3 {
+  width: 100%;
+  display: flex;
+}
+#inventions3__h1{
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: antiquewhite;
+}
+.inventions3__h2{
+  padding-bottom: 30px;
+  color: antiquewhite;
+}
+.inventions3__content{
+padding-right: 50px;
+color: antiquewhite;
+}
+#acMotor {
+  border-radius: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+/*Footer Section*/
+
+.footer__section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 50vh;
+  background-color: #161623;
+  padding-top: 0;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.footer .social_icon li {
+  list-style: none;
+}
+.footer .social_icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+.footer P {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(images/wave.png);
+  background-size: 1000px 100px;
+}
+.footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite; 
+}
+.footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite; 
+}
+.footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite; 
+}
+.footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite; 
+}
+
+
+@keyframes animateWave 
+{
+  0%
+  {background-position-x: 1000px;}
+  100%
+  {background-position-x: 0px;}
+}
+@keyframes animateWave_02 
+{
+  0%
+  {background-position-x: 0px;}
+  100%
+  {background-position-x: 1000px;}
+}
+
+
+/*Mobile Response*/
+
+@media screen and (max-width: 600px) {
+  .inventions__main {
+    height: 100vh;
+    background: #ffc728;
+    height: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  #remoteImg {
+    width: 45px;
+    height:45px;
+    
+  }
+}

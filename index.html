@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Nikola Tesla Tribute Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Righteous&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <header>
+      <img src="images/logo.png" alt="logo" id="logo">
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#briefHistory"> <button> A Brief History</button></a></li>
+          <li><a href="#inventionsAll"><button>Inventions</button></a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank"><button>Wikipedia Link</button></a>
+    </header>
+
+<!--main section parallax-->
+	  <section id="main">
+      <div id="img-div">
+            <img src="images/stars.png" id="stars">
+            <img src="images/electricBall.png" id="electricBall">
+            <h2 id="image_caption">Nikola Tesla Tribute Page</h2>
+            <img src="images/NikolaVector.png" id="NikolaVector">            
+          </div>
+        </section>   
+        <script>
+            let stars = document.getElementById('stars')
+           let electricBall = document.getElementById('electricBall')
+            let image_caption = document.getElementById('image_caption')
+            let NikolaVector = document.getElementById('NikolaVector')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                stars.style.left = value + 'px';
+                electricBall.style.top = value * 1.05 + 'px';
+                NikolaVector.style.top = value * 0 + 'px';
+                image_caption.style.marginRight = value * 4 + 'px';
+                image_caption.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+
+        <!--card section-->
+        <div class="sections" id="briefHistory">
+          <h1 id="card__h1">A Brief History</h1>
+          <div class="glass__container">
+            <div class="glass__card">
+              <div class="glass__content">
+                <h2>Early Life</h2>
+                <p>Nikola Tesla was born a subject of the Austro-Hungarian Empire in 1856 in a mountainous area of the Balkan Peninsula known as Lika. His father Milutin, and his mother Djuka, were both Serbian by origin. Tesla's father was a stern but loving Orthodox priest, who was also a gifted writer and poet.</p>
+                <a href="https://www.pbs.org/tesla/ll/ll_early.html#:~:text=Nikola%20Tesla%20was%20born%20a,a%20gifted%20writer%20and%20poet." target="_blank">Read More</a>
+              </div>
+            </div>
+            <div class="glass__card">
+              <div class="glass__content">
+                <h2>Life in America</h2>
+                <p>Tesla sailed for America in 1884, arriving in New York with four cents in his pocket, a few of his own poems, and calculations for a flying machine. He first found employment with Thomas Edison, but the two inventors were far apart in background and methods, and their separation was inevitable.</p>
+                <a href="https://www.britannica.com/biography/Nikola-Tesla" target="_blank">Read More</a>
+              </div>
+            </div>
+            <div class="glass__card">
+              <div class="glass__content">
+                <h2>Final Project</h2>
+                <p>Having become obsessed with the wireless transmission of energy, around 1900 Tesla set to work on his boldest project yet: to build a global, wireless communication system — to be transmitted through a large electrical tower — for sharing information and providing free energy throughout the world.</p>
+                <a href="https://www.biography.com/inventor/nikola-tesla#:~:text=Having%20become%20obsessed%20with%20the,free%20energy%20throughout%20the%20world." target="_blank">Read More</a>
+                </div>
+                </div>
+              </div>
+        </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+          VanillaTilt.init(document.querySelectorAll(".glass__card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+          });
+        </script>
+        <!--Inventions Sections-->
+
+<div class="inventions__main" id="inventionsAll">
+  <h1 id="inventions__h1">Inventions Attributed to Nikola Tesla</h1>
+<div class="inventions">
+    <img id="remoteImg" src="images/remote.jpg" alt="Remote Pic">
+  <div class="inventions__content">
+
+    <h2 class="inventions__h2">The Remote Control</h2>
+    <p class="inventions__p">Remote controls are an invention born in the 1800s. Renowned Serbian-American inventor Nikola Tesla created one of the world's first wireless remote controls, which he unveiled at Madison Square Garden in New York City in 1898. 
+      
+    <p class="inventions__p">He called his fledgling system, which could be used to control a range of mechanical contraptions, a "teleautomaton." For his demonstration, Tesla employed a miniature boat controlled by radio waves. The boat had a small metal antenna that could receive exactly one radio frequency.</p>
+<br> <br>
+  <p class="inventions__p">Tesla sent signals to the boat using a box -- his version of a remote control -- equipped with a lever and a telegraph key (originally designed to send Morse code signals). The signals generated from this box shifted electrical contacts aboard the boat, which, in turn, adjusted settings for the rudder and propeller, allowing the operator to control the boat's motion.</p>
+<br><br>      
+  <p class="inventions__p">Financially, Tesla's remote-controlled boats were a flop. His intended client, the U.S. Navy, thought the technology was too flimsy for war. But the concept of remote control caught on and quickly spread to many other types of equipment.</p>
+  </div>
+  </div>  
+</div>
+
+<!--Inventions2-->
+<div class="inventions2__main">
+<div class="inventions2">  
+  <img id="xRayImg" src="images/xRay.png" alt="Remote Pic">
+  <div class="inventions2__content">
+    <h2 class="inventions2__h2">X-Rays</h2>
+    <p class="inventions2__p">The discovery of X-rays is credited to German scientist Wilhelm Roentgen for first detecting the electromagnetic radiations by accident in his 1895 experiments where he was testing whether cathode rays could pass through glass.</p> 
+      
+    <p class="inventions2__p">Not many know this, but Nikola Tesla was experimenting in the same field prior to Roentgen and published his experimental results in numerous scientific periodicals during the early 1890s. Since these rays were still unknown Tesla used the term “radiant matter" to describe these radiations.</p>
+<br> <br>
+  <p class="inventions2__p">Tesla produced some of the first X-ray imaging, which he called “shadowgraphs,” but his laboratory caught fire on March 13, 1895, and Tesla would lose everything including all photos and paperwork.</p>
+<br><br>      
+  <p class="inventions2__p">He would later give all credit to Rontgen for the discovery, and throughout the next few years produced some of the best X-ray images that even Roentgen praised. Tesla would also be the first scientist to warn the scientific community about the harms of X-rays, and designed methods to use them correctly.</p>
+  </div>
+  </div>
+</div>
+
+<!--invention 3-->
+
+<div class="inventions3__main">
+<div class="inventions3">
+    <img id="acMotor" src="images/acMotor.jpg" alt="AC Motor">
+  <div class="inventions3__content">
+
+    <h2 class="inventions3__h2">The Alternative Current Motor</h2>
+    <p class="inventions3__p">One of the original AC Tesla Induction Motors is on display in the British Science Museum in London today. This motor was referenced in T.C. Martin's book as loaned by Tesla to Prof. Ayrton in England. 
+      <br><br> In 1892, Tesla delivered his famous lecture before the Institution of Electrical Engineers and the Royal Institution of Great Britain, in London, where he gave his original induction motor to Prof. Ayrton.
+      <br><br>
+    <p class="inventions3__p">Nikola Tesla invented the induction motor with rotating magnetic field that made unit drives for machines feasible and made AC power transmission an economic necessity.In 1887 and 1888 Tesla had an experimental shop at 89 Liberty Street, New York, and there he invented the induction motor. He sold the invention to Westinghouse in July 1888 and spent a year in Pittsburgh instructing Westinghouse engineers.</p>
+<br> <br>
+  <p class="inventions3__p">AC (alternating current) motors are low-cost and high-efficiency mechanisms used in large variety of applications. In AC motors, the input alternating current creates a rotating magnetic field over the stator, which ultimately moves the rotor, which is connected with an output shaft. From heavy industrial to household environments; different types and categories of AC motors have applications wherever electrical appliances are utilized.</p>
+  </div>
+  </div>  
+</div>
+
+<!--Footer Section-->
+<div class="footer__section">  
+  <div class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+      <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+    <p>©2022 School of Code Tribute Page Application / All Rights Reserved</p>      
+  </div>
+  <script src="https://kit.fontawesome.com/37cc452874.js" crossorigin="anonymous"></script>
+  </div>
+</body>
+</html>
